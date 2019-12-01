@@ -12,11 +12,11 @@ export class CursosComponent implements OnInit {
 
   cursos: string[];
 
-  constructor(cursosService: CursosService) { 
+  constructor(private cursosService: CursosService) { 
 
     this.nomePortal = 'http://loiane.trainning';
-
-   }
+    this.cursos = this.cursosService.getCursos();
+  }
 
   ngOnInit() {
   }
