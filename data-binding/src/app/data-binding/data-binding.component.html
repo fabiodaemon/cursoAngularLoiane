@@ -1,0 +1,21 @@
+<section class="property-binding">
+    <article>
+        <h3>Interpolação</h3>
+        <p>String renderizada com Interpolação {{ url }}</p>
+        <p>Resultado de 1 + 1 é igual {{ 1 + 1 }}</p>
+        <p>Resultado de 1 + 1 não é {{ 1 + 1 + getValor() }}</p>
+        <p>Curso de Angular e gosto do curso: {{cursoAngular && getCurtirCurso()}}  </p>
+        
+    </article>
+
+    <article>
+        <h3>Property Binding</h3>
+        <img src="{{urlImage}}">
+        <img [src]="urlImage"> <!-- mesma coisa que <img bind-src=""> -->
+        
+        <!-- Quando não existe uma propriedade do elemento, deve-se usar o attr -->
+        <!-- Ex: <td [attr.colspan]> -->
+            
+    </article>
+
+</section>
