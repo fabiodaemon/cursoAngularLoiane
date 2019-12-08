@@ -1,0 +1,24 @@
+import { Component, OnInit } from '@angular/core';
+
+@Component({
+  selector: 'app-meuform',
+  templateUrl: './meuform.component.html',
+  styleUrls: ['./meuform.component.css']
+})
+export class MeuformComponent implements OnInit {
+
+  nome: string = 'abc';
+
+  pessoa: any = {
+
+    nome: 'Luiz',
+    idade: 20
+
+  };
+
+  constructor() { }
+
+  ngOnInit() {
+  }
+
+}
