@@ -46,7 +46,7 @@ export class DataBindingComponent implements OnInit {
 
   salvarValor(valor){
     this.valorSalvo = valor;
-  }
+  } 
 
   onMouseOverOut(){
     this.isMouseOver = !this.isMouseOver;
