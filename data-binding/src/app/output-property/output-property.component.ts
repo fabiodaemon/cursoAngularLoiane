@@ -13,7 +13,7 @@ export class OutputPropertyComponent implements OnInit {
 
   @Output() mudouValor = new EventEmitter();
 
-  @ViewChild('campoInput') campoValorInput: ElementRef;
+  @ViewChild('campoInput', {static: false}) campoValorInput: ElementRef;
 
   incrementa(){
     this.campoValorInput.nativeElement.value++;
