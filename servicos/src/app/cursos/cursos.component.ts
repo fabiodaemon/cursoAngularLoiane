@@ -5,7 +5,9 @@ import { CursosService } from './cursos.service'
 @Component({
   selector: 'cursos',
   templateUrl: './cursos.component.html',
-  styleUrls: ['./cursos.component.css']
+  styleUrls: ['./cursos.component.css'],
+  providers: [CursosService]
+  // esta é uma opção colocar o provider aqui caso queira que apenas um componente acesse este serviço
 })
 export class CursosComponent implements OnInit {
 
