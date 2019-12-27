@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class ExemplosPipesComponent implements OnInit {
   
   livro: any = {
-    titulo: 'livro qlq',
+    titulo: 'learning javasCript datA Structures and alghorithms 2nd Ed',
     rating: 4.133,
     numeroPaginas: 314,
     preco: 49.90,
