@@ -3,8 +3,8 @@
 <p>Titulo: {{livro.titulo | uppercase | lowercase | camelCase }} </p>
 <p>rating: {{livro.rating | number:'1.1-1' }} </p>
 <p>numeroPaginas: {{livro.numeroPaginas}} </p>
-<p>preco: {{livro.preco | currency:'BRL' }} </p>
-<p>dataLancamento: {{livro.dataLancamento | date:'dd-MM-yyyy' }} </p>
+<p>preco: {{livro.preco | currency }} </p>
+<p>dataLancamento: {{livro.dataLancamento | date }} </p>
 <p>url: {{livro.url}} </p>
 <p> </p>
 <p>Livro: {{livro | json}} </p>
