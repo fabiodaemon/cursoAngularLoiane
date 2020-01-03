@@ -8,3 +8,18 @@
 <p>url: {{livro.url}} </p>
 <p> </p>
 <p>Livro: {{livro | json}} </p>
+
+<input type="text" [(ngModel)]="filtro">
+
+<br>
+<input type="text" #novoValor>
+<button (click)="addCurso(novoValor.value)">Adicionar Curso</button>
+<!-- Esse adicionar curso nao funciona quando esta filtrado, tendo que apgar o filtro e depois fazer o filtro
+Isso se deve pq ele e um pipe puro, pois nao leva em conta as mudanças feitas no componente -->
+
+
+<ul>
+    <li *ngFor="let liv of livros | filtroArray:filtro">
+        {{liv}}
+    </li>
+</ul>
