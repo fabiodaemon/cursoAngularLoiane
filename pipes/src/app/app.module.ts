@@ -28,6 +28,7 @@ registerLocaleData(localePT, 'pt', localeExtraPT);
     FormsModule
   ],
   providers: [
+    AuthService
     // {
     //   provide: LOCALE_ID,
     //   useValue: 'pt'
