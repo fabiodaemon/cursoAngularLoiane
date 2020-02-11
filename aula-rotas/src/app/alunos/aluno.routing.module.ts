@@ -6,7 +6,7 @@ import { AlunosComponent } from './alunos.component';
 import { AlunoDetalheComponent } from './aluno-detalhe/aluno-detalhe.component';
 
 const alunosRoutes = [
-    {path: 'alunos', component: AlunosComponent, children: [
+        {path: 'alunos', component: AlunosComponent, children: [
         {path: 'novo', component: AlunoFormComponent},
         // o aluno/novo tem q vir antes do que tem id (parametro dinamico) pois senao da coalisão de rotas
         {path: ':id', component: AlunoDetalheComponent},
